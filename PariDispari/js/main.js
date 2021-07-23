@@ -1,4 +1,4 @@
-// PariDispari
+// PARIDISPARI
 
 // L’utente sceglie pari o dispari
 
@@ -25,27 +25,33 @@ console.log(IsNotUneven(numeroUtente));
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
 function numeroPC(min, max) {
-    return Math.floor(Math.random() * (max - min) ) + min;
-  }
+    var OutNumPC = Math.floor(Math.random() * (max - min) ) + min;
+    return OutNumPC;
+}
 
-console.log("numero pc " + numeroPC(1,6));
+var OutNumPC = numeroPC(1,6);
 
-// // Sommiamo i due numeri (con funzione);
+console.log("numero pc " + OutNumPC);
 
-function somma(numeroUtente, numeroPC){
-    risultato=numeroUtente + numeroPC;
+// Sommiamo i due numeri (con funzione);
+
+function somma(numeroUtente, OutNumPC) {
+    var risultato = numeroUtente + OutNumPC;
     return risultato;
 }
-  
-// // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione);
 
-function pariDispari(somma) {
-    if(somma % 2 == 0) {
-        console.log("La Somma è pari");
-        return pari;
+console.log("La somma è " + somma(numeroUtente, OutNumPC));
+
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione);
+
+var sommatotale = somma(numeroUtente, OutNumPC);
+
+function pariDispari(sommatotale) {
+
+    if(sommatotale % 2 == 0) {
+        console.log("la somma è pari" + pariDispari);
     } else {
-        console.log("La Somma è dispari");
-        return dispari;
+        console.log("la somma è dispari" + pariDispari);
     }
 }
 
