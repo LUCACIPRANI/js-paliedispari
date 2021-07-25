@@ -44,7 +44,7 @@ function somma(numeroUtente, OutNumPC) {
 }
         //salvo il risulato in una variabile;
 var results = somma(numeroUtente, OutNumPC);
-        // stampo il risultato 
+        // stampo il risultato della somma
 console.log("La somma è " + results);
 
 
