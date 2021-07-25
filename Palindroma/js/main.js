@@ -2,12 +2,33 @@
 
 // Chiedere all’utente di inserire una parola
 
-// var utenteParola = prompt("Inserisci una parola");
-// console.log(utenteParola);
+const utenteParola = prompt("Inserisci una parola");
+console.log(utenteParola);
 
 // Creare una funzione per capire se la parola inserita è palindroma
 
-// metodo normale 
+        // funzione invertiParola 
+function invertiParola(str) {
+    let inverti  = str.split('').reverse().join('');
+    return inverti;
+}
+        // nuova variabile parolaInversa
+const parolaInversa = invertiParola(utenteParola);
+
+        // condizione 
+if(parolaInversa == utenteParola) {
+    console.log("la parola è palindroma");
+} else {
+    console.log("la parola non è palindroma");
+}
+
+
+
+// metodo con Passaggi
+
+
+// var utenteParola = prompt("Inserisci una parola");
+// console.log(utenteParola);
 
 // var parolaDivisa = utenteParola.split('');
 // console.log(parolaDivisa);
@@ -23,24 +44,4 @@
 //     console.log('la parola è palindroma');
 //   } else {
 //     console.log('la parola non è palindroma');
-//   }
-  
-
-//   con la funzione;
-
-// var utenteParola = prompt("Inserisci una parola");
-// console.log(utenteParola);
-
-// var parolaInversa = invertiParola(utenteParola);
-
-// if(parolaInversa == parolaUtente) {
-//     console.log("la parola è palindroma");
-// } else {
-//     console.log("la parola non è palindroma");
-// }
-
-// function invertiParola(str) {
-//     var strInversa  = str.split(" ").reverse().join("");
-//     return strInversa;
-// }
-
+//  }
